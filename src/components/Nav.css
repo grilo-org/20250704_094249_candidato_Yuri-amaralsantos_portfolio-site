@@ -24,7 +24,6 @@ nav div {
   padding: 0.5rem 1rem;
   border-radius: 1rem;
   display: inline-block;
-  text-align: center;
 }
 
 .nav-link-button:hover {

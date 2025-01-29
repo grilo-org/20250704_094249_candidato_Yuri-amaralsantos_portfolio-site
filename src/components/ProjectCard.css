@@ -15,7 +15,7 @@
   width: 100%; /* Adjust as needed */
   max-width: 300px;
   height: 160px; /* Limit image size */
-  border-radius: 8px;
+  border: #00ff00 1px solid;
   margin-bottom: 1rem;
 }
 

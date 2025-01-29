@@ -1,20 +1,21 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import "./ProjectSection.css"; // Import the CSS file
-import rectangleImage from "../assets/rectangle.png";
+import project1 from "../assets/site1.png";
+import rectangle from "../assets/rectangle.png";
 
 const ProjectsSection = () => {
   const projects = [
     {
       title: "Portifolio",
       description: "Portfolio pessoal construido utilizando react",
-      image: rectangleImage, // Example image URL
-      link: "https://github.com/Yuri-amaralsantos/unityJogoEducativo", // Example link
+      image: project1, // Example image URL
+      link: "https://github.com/Yuri-amaralsantos/portfolio-site", // Example link
     },
     {
       title: "Em desenvolvimento",
       description: "Em desenvolvimento",
-      image: rectangleImage, // Example image URL
+      image: rectangle, // Example image URL
       link: "#development", // Example link
     },
     // Add more projects as needed
