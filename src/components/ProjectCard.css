@@ -1,0 +1,67 @@
+.project-card {
+  background-color: #1e1e1e;
+  border: 1px solid #00ff00;
+  border-radius: 8px;
+  padding: 1rem 1rem;
+  color: #00ff00;
+  font-family: "IBM Plex Mono", monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.project-card img {
+  width: 100%; /* Adjust as needed */
+  max-width: 300px;
+  height: 160px; /* Limit image size */
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+#tituloCard {
+  min-width: 300px;
+  display: flex;
+  text-align: left;
+}
+
+#tituloCard h3 {
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+#desc {
+  text-align: justify;
+
+  width: 100%;
+  max-width: 300px;
+  min-height: 100px;
+}
+
+#desc p {
+  margin: 0;
+}
+
+/* Link styled as a button */
+.project-card-link {
+  border: 1px solid #00ff00;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #00ff00;
+  color: #1e1e1e;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.project-card-link:hover {
+  background-color: #1e1e1e;
+  color: #00ff00;
+  border: 1px solid #00ff00;
+  text-decoration: none;
+}

@@ -1,0 +1,85 @@
+/* Grid container */
+#habilidades {
+  padding: 1rem 1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
+  max-width: 1000px; /* Limits the container's maximum width */
+  margin: auto; /* Centers the grid */
+  gap: 15px; /* Reduces gaps for mobile */
+  padding: 20px;
+}
+
+/* Individual skill item */
+.skill-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+  border-radius: 10px;
+  padding: 10px; /* Smaller padding for mobile */
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: center; /* Ensures content is centered */
+}
+
+/* Skill item hover effect */
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Icon styling */
+.skill-icon {
+  width: 64px; /* Smaller default size */
+  height: 64px;
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Hover effect for icons */
+.skill-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+  .skills-grid {
+    grid-template-columns: repeat(
+      8,
+      1fr
+    ); /* 3 items per row on small screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(
+      5,
+      1fr
+    ); /* 3 items per row on small screens */
+  }
+
+  .skill-icon {
+    width: 60px;
+    height: 60px;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-grid {
+    grid-template-columns: repeat(
+      3,
+      1fr
+    ); /* 3 items per row on small screens */
+  }
+
+  .skill-item {
+    padding: 8px; /* Smaller padding for tight layouts */
+  }
+
+  .skill-icon {
+    width: 64px; /* Small icon size for very small screens */
+    height: 64px;
+  }
+}

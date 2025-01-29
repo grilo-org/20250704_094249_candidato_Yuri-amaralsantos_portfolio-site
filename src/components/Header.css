@@ -1,0 +1,49 @@
+/* Default styles (for larger screens) */
+header {
+  border: #00ff00 1px solid;
+  margin-top: 4rem;
+  background-color: #1e1e1e;
+}
+
+.titulo {
+  margin-left: 2rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.titulo h1,
+.titulo p {
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+.titulo h1 {
+  font-size: 4rem;
+}
+
+.titulo p {
+  font-size: 1.5rem;
+  font-weight: 100;
+}
+
+/* Button-like link */
+#headerButton {
+  background-color: #00ff00;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  margin-top: 3rem;
+  border: 1px solid #00ff00;
+  font-size: 18px;
+  font-weight: bold;
+  color: #1e1e1e;
+  text-decoration: none; /* Removes underline */
+  display: inline-block; /* Makes it behave like a block-level element */
+  text-align: center; /* Centers text */
+}
+
+#headerButton:hover {
+  background-color: #1e1e1e;
+  color: #00ff00;
+  border-color: #00ff00;
+}

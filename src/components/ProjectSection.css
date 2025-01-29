@@ -1,0 +1,11 @@
+#projetos {
+  display: flex;
+  align-items: center;
+  flex-direction: row; /* Display children in a row */
+  flex-wrap: wrap; /* Allow wrapping to the next line if space runs out */
+  gap: 2rem; /* Space between cards */
+  justify-content: center; /* Align cards to the start */
+  padding: 1rem 0; /* Add some padding for better spacing */
+}
+
+/* Ensure the ProjectCard component takes up equal space */

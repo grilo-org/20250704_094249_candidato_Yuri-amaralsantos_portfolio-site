@@ -1,0 +1,81 @@
+nav {
+  border: #00ff00 1px solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 1rem;
+}
+
+nav div {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+.nav-link-button {
+  border: #00ff00 1px solid;
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: bold;
+  font-size: 16px;
+  color: #00ff00;
+  text-decoration: none;
+  margin: 0 1rem;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  text-align: center;
+}
+
+.nav-link-button:hover {
+  background-color: #00ff00;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+
+#menuMobile {
+  display: none; /* Hide the menu by default */
+}
+
+#toggleButton {
+  display: none; /* Hide the button by default */
+}
+
+/* Styles for mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  nav {
+    display: none; /* Hide the desktop nav on mobile */
+  }
+
+  #toggleButton {
+    font-size: 24px;
+    display: block; /* Show the button on mobile screens */
+    background-color: #1e1e1e;
+    color: #00ff00;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+  #menuMobile {
+    display: flex; /* Show the menu when visible */
+    flex-direction: column;
+    background-color: #1e1e1e;
+    padding: 10px;
+    position: absolute;
+    top: 60px; /* Adjust based on your header height */
+    left: 0;
+    width: 100%;
+    border: #00ff00 solid 1px;
+  }
+
+  #menuMobile a {
+    padding: 10px;
+    color: #00ff00;
+    text-decoration: none;
+  }
+
+  #menuMobile a:hover {
+    background-color: #ddd;
+  }
+}
