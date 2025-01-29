@@ -26,8 +26,8 @@ http://localhost:5132
 
 ## Estrutura do projeto
 - src/: Contém os arquivos principais do projeto.
-  - components/: Componentes reutilizáveis da interface.
-  - assets/: Arquivos estáticos como imagens, fontes, etc.
+   - components/: Componentes reutilizáveis da interface.
+   - assets/: Arquivos estáticos como imagens, fontes, etc.
 - public/: Arquivos públicos como o index.html.
 
 ## Licença
