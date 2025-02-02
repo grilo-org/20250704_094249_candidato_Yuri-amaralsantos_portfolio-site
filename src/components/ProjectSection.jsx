@@ -3,14 +3,22 @@ import ProjectCard from "./ProjectCard";
 import "./ProjectSection.css"; // Import the CSS file
 import project1 from "../assets/site1.png";
 import rectangle from "../assets/rectangle.png";
+import project2 from "../assets/site2.png";
 
 const ProjectsSection = () => {
   const projects = [
     {
       title: "Portifolio",
-      description: "Portfolio pessoal construido utilizando react",
+      description: "Portfolio pessoal construido utilizando react.",
       image: project1, // Example image URL
       link: "https://github.com/Yuri-amaralsantos/portfolio-site", // Example link
+    },
+    {
+      title: "Learn Notes",
+      description:
+        "Um aplicativo web desenvolvido em React que permite criar e organizar suas anotações de forma prática.",
+      image: project2, // Example image URL
+      link: "https://wiki-study-app-polo.vercel.app", // Example link
     },
     {
       title: "Em desenvolvimento",
