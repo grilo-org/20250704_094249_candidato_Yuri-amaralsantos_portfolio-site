@@ -32,7 +32,7 @@ const ProjectsSection = () => {
     {
       title: "Em desenvolvimento",
       description: "Em desenvolvimento",
-      image: Rectangle,
+      image: rectangle,
       link: "",
     },
     // Add more projects as needed
