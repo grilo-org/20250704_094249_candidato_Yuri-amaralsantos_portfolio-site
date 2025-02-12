@@ -11,22 +11,29 @@ const ProjectsSection = () => {
     {
       title: "Portifolio",
       description: "Portfolio pessoal construido utilizando react.",
-      image: project1, // Example image URL
-      link: "https://github.com/Yuri-amaralsantos/portfolio-site", // Example link
+      image: project1,
+      link: "https://github.com/Yuri-amaralsantos/portfolio-site",
     },
     {
       title: "Learn Notes",
       description:
         "Um aplicativo web desenvolvido em React que permite criar e organizar suas anotações de forma prática.",
-      image: project2, // Example image URL
-      link: "https://wiki-study-app-polo.vercel.app", // Example link
+      image: project2,
+      link: "https://wiki-study-app-polo.vercel.app",
     },
     {
       title: "Chat em Tempo Real",
       description:
         "um aplicativo de chat em tempo real, projetado para facilitar a comunicação dentro de sistemas, com autenticação JWT, WebSockets (Socket.io) e PostgreSQL para gerenciamento de usuários.",
-      image: project3, // Example image URL
-      link: "https://github.com/Yuri-amaralsantos/javascriptChatApp", // Example link
+      image: project3,
+      link: "https://github.com/Yuri-amaralsantos/javascriptChatApp",
+    },
+
+    {
+      title: "Em desenvolvimento",
+      description: "Em desenvolvimento",
+      image: Rectangle,
+      link: "",
     },
     // Add more projects as needed
   ];
