@@ -1,11 +1,19 @@
 #projetos {
-  display: flex;
-  align-items: center;
-  flex-direction: row; /* Display children in a row */
-  flex-wrap: wrap; /* Allow wrapping to the next line if space runs out */
-  gap: 2rem; /* Space between cards */
-  justify-content: center; /* Align cards to the start */
-  padding: 1rem 0; /* Add some padding for better spacing */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for PC */
+  gap: 2.3rem;
 }
 
-/* Ensure the ProjectCard component takes up equal space */
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #projetos {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  #projetos {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+  }
+}

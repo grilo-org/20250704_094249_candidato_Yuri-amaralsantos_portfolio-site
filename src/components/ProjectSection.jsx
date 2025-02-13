@@ -24,7 +24,7 @@ const ProjectsSection = () => {
     {
       title: "Chat em Tempo Real",
       description:
-        "um aplicativo de chat em tempo real, projetado para facilitar a comunicação dentro de sistemas, com autenticação JWT, WebSockets (Socket.io) e PostgreSQL para gerenciamento de usuários.",
+        "Um aplicativo de chat em tempo real, projetado para facilitar a comunicação dentro de sistemas, com autenticação JWT, WebSockets (Socket.io) e PostgreSQL para gerenciamento de usuários.",
       image: project3,
       link: "https://github.com/Yuri-amaralsantos/javascriptChatApp",
     },

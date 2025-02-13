@@ -37,7 +37,7 @@
 
   width: 100%;
   max-width: 300px;
-  min-height: 100px;
+  min-height: 140px;
 }
 
 #desc p {
@@ -52,6 +52,7 @@
   font-weight: bold;
   background-color: #00ff00;
   color: #1e1e1e;
+
   padding: 0.5rem 1rem;
   text-decoration: none;
   display: inline-block;
