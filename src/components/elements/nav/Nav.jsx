@@ -26,6 +26,7 @@ const Nav = () => {
         <div id="menuMobile">
           <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
+          <a href="#design">Design</a>
           <a href="#habilidades">Habilidades</a>
           <a href="#contato">Contato</a>
           <a href="curriculoti.pdf" download>
@@ -39,6 +40,7 @@ const Nav = () => {
         <div>
           <a href="#sobre">Sobre</a>
           <a href="#projetos">Projetos</a>
+          <a href="#design">Design</a>
           <a href="#habilidades">Habilidades</a>
           <a href="#contato">Contato</a>
         </div>

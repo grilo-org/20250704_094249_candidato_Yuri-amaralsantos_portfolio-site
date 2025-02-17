@@ -4,7 +4,7 @@ import "./Skills.css";
 const Skills = () => {
   // Dynamically generate icons from 1 to 23
   const icons = Array.from({ length: 23 }, (_, i) => ({
-    src: new URL(`../assets/icons/${i + 1}.png`, import.meta.url).href,
+    src: new URL(`../../../assets/icons/${i + 1}.png`, import.meta.url).href,
     alt: `Icon ${i + 1}`, // Descriptive alt text
   }));
 
