@@ -5,6 +5,7 @@ import project1 from "../../../assets/site1.png";
 import rectangle from "../../../assets/rectangle.png";
 import project2 from "../../../assets/site2.png";
 import project3 from "../../../assets/site3.png";
+import project4 from "../../../assets/site4.png";
 
 const ProjectsSection = () => {
   const projects = [
@@ -27,6 +28,14 @@ const ProjectsSection = () => {
         "Um aplicativo de chat em tempo real, projetado para facilitar a comunicação dentro de sistemas, com autenticação JWT, WebSockets (Socket.io) e PostgreSQL para gerenciamento de usuários.",
       image: project3,
       link: "https://github.com/Yuri-amaralsantos/javascriptChatApp",
+    },
+
+    {
+      title: "Blog",
+      description:
+        "Um blog completo com Flask no backend, Vue.js no frontend e PostgreSQL para armazenamento de dados. ",
+      image: project4,
+      link: "https://github.com/Yuri-amaralsantos/flaskBlog",
     },
 
     {
