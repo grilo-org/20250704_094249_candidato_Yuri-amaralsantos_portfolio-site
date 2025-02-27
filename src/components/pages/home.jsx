@@ -1,4 +1,4 @@
-import Header from "../sessions/Header/Header";
+import Header from "../sessions/Header/Header.jsx";
 import ProjectsSection from "../sessions/projects/ProjectSection";
 import About from "../sessions/about/About";
 
