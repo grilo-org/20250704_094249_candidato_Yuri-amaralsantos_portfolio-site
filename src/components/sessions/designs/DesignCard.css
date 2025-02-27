@@ -1,45 +1,69 @@
-.modal {
+.design-card {
+  background-color: black;
+  cursor: pointer;
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.design-card:hover {
+  transform: scale(1.1);
+}
+
+.design-card h3 {
+  color: white;
+}
+
+.preview {
+  height: 200px;
+}
+
+.fullImage {
+  width: 90%;
+  height: 50%;
+}
+
+.design-card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Modal Styling */
+.modal-overlay {
+  overflow-y: auto;
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: hsla(0, 0%, 4%, 0.459);
+  background: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
-  align-items: center;
-}
-
-.modal-button {
-  color: #1e1e1e;
-  background-color: #00f000;
-  padding: 0.5rem 1rem;
-  border-radius: 10px;
-  font-weight: bold;
-  border: 1px solid #00f000;
-  font-size: 16px;
-  cursor: pointer;
-}
-
-.modal-button:hover {
-  background-color: #1e1e1e;
-  color: #00ff00;
+  align-items: flex-start;
 }
 
 .modal-content {
+  margin: 4rem 0;
+  height: 900px;
+
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 800px;
   position: relative;
+  text-align: center;
 }
 
-.close {
+.close-btn {
   position: absolute;
-  top: -5px;
-  right: 10px;
-  font-size: 40px;
+  top: 10px;
+  right: 15px;
+  background: none;
+  border: none;
+  font-size: 20px;
   cursor: pointer;
-  color: #fd0707;
-}
-
-.modal-image {
-  max-width: 100%;
-  height: auto;
 }

@@ -38,12 +38,6 @@ const ProjectsSection = () => {
       link: "https://github.com/Yuri-amaralsantos/flaskBlog",
     },
 
-    {
-      title: "Em desenvolvimento",
-      description: "Em desenvolvimento",
-      image: rectangle,
-      link: "",
-    },
     // Add more projects as needed
   ];
 

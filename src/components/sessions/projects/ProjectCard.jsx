@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.css"; // Import the CSS file
 
-const ProjectCard = ({ title, description, image, link }) => {
+const ProjectCard = ({ title, description, image, link, openModal }) => {
   return (
     <div className="project-card">
       <div id="tituloCard">
@@ -16,7 +16,7 @@ const ProjectCard = ({ title, description, image, link }) => {
 
       {/* Link styled as a button */}
       <a href={link} className="project-card-link">
-        Ver mais
+        Acessar
       </a>
     </div>
   );

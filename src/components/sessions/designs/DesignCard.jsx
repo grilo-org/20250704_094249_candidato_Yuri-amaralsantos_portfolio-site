@@ -1,37 +1,44 @@
-import React, { useState } from "react";
-import "./DesignCard.css"; // Import the CSS file
+import React, { useState, useEffect } from "react";
+import "./DesignCard.css";
 
-const DesignCard = ({ title, image }) => {
+const DesignCard = ({ title, image, preview, desc }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
+
+  // Disable body scroll when modal is open
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => {
+      document.body.style.overflow = "auto"; // Cleanup when component unmounts
+    };
+  }, [isModalOpen]);
+
   return (
-    <div className="project-card">
-      <div id="tituloCard">
+    <>
+      <div className="design-card" onClick={openModal}>
         <h3>{title}</h3>
+        {image && <img src={preview} alt="Preview" className="preview" />}
       </div>
 
-      {/* Display image if provided */}
-      {image && (
-        <>
-          <img src={image} alt="Preview" />
-          <button onClick={() => setIsModalOpen(true)} className="modal-button">
-            View Image
-          </button>
-        </>
-      )}
-
-      {/* Modal for displaying the image */}
       {isModalOpen && (
-        <div className="modal">
-          <div className="modal-content">
-            <span className="close" onClick={() => setIsModalOpen(false)}>
-              &times;
-            </span>
-            <img src={image} alt="Full View" className="modal-image" />
+        <div className="modal-overlay" onClick={closeModal}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <button className="close-btn" onClick={closeModal}>
+              ×
+            </button>
+            <h2>{title}</h2>
+            <p>{desc}</p>
+            <img className="fullImage" src={image}></img>
           </div>
         </div>
       )}
-    </div>
+    </>
   );
 };
 
