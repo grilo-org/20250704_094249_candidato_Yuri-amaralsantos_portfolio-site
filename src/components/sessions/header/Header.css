@@ -1,8 +1,13 @@
 /* Default styles (for larger screens) */
 header {
   border: #000000 1px solid;
+  background-image: url("../../../assets/lake.jpg");
 
-  background-color: #1e1e1e;
+  width: 100%;
+  height: auto;
+
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .titulo {

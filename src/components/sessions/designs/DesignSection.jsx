@@ -1,16 +1,17 @@
 import React from "react";
 import DesignCard from "./DesignCard";
 import "./DesignSection.css"; // Import the CSS file
-import design1 from "../../../assets/site1.png";
+import designPreview1 from "../../../assets/designs/designPreview1.png";
+import designFull1 from "../../../assets/designs/designFull1.png";
 import rectangle from "../../../assets/rectangle.png";
 
 const DesignSection = () => {
   const projects = [
     {
-      title: "em desenvolvimento",
-      preview: rectangle,
-      desc: "em desenvolvimento",
-      image: rectangle,
+      title: "Design de uma loja virtual de produtos eletrônicos",
+      preview: designPreview1,
+      desc: "Produzida por mim, para fins de estudo. Possui todos os vários elementos que uma loja virtual de eletrônicos necessita.",
+      image: designFull1,
     },
   ];
 

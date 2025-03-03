@@ -3,84 +3,41 @@
   padding: 1rem 1rem;
 }
 
-.skills-grid {
-  background-color: black;
+.icons {
   display: grid;
-  border-radius: 15px;
-  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));
-  max-width: 1000px; /* Limits the container's maximum width */
-  margin: auto; /* Centers the grid */
-  gap: 15px; /* Reduces gaps for mobile */
-  padding: 20px;
-}
-
-/* Individual skill item */
-.skill-item {
-  display: flex;
+  gap: 20px;
+  grid-template-columns: repeat(10, 1fr); /* 10 items per row on PC */
   justify-content: center;
-  align-items: center;
-
-  padding: 10px; /* Smaller padding for mobile */
-  transition: transform 0.2s;
-  text-align: center; /* Ensures content is centered */
 }
 
-/* Skill item hover effect */
-.skill-item:hover {
-  transform: translateY(-5px);
-}
-
-/* Icon styling */
-.skill-icon {
-  width: 64px; /* Smaller default size */
-  height: 64px;
-  transition: transform 0.2s ease-in-out;
-  color: black;
-}
-
-/* Hover effect for icons */
-.skill-icon:hover {
-  transform: scale(1.2);
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-  .skills-grid {
-    grid-template-columns: repeat(
-      8,
-      1fr
-    ); /* 3 items per row on small screens */
-  }
-}
-
+/* Responsive for mobile */
 @media (max-width: 768px) {
-  .skills-grid {
-    grid-template-columns: repeat(
-      5,
-      1fr
-    ); /* 3 items per row on small screens */
-  }
-
-  .skill-icon {
-    width: 60px;
-    height: 60px;
+  .icons {
+    grid-template-columns: repeat(5, 1fr); /* 5 items per row on mobile */
   }
 }
 
-@media (max-width: 480px) {
-  .skills-grid {
-    grid-template-columns: repeat(
-      3,
-      1fr
-    ); /* 3 items per row on small screens */
-  }
+.icon {
+  font-size: 80px; /* Default size */
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-align: center;
+}
 
-  .skill-item {
-    padding: 8px; /* Smaller padding for tight layouts */
-  }
+/* Specific Colors */
+.tailwind {
+  color: #38bdf8; /* Tailwind blue */
+}
 
-  .skill-icon {
-    width: 64px; /* Small icon size for very small screens */
-    height: 64px;
-  }
+.springboot {
+  color: #6db33f; /* Spring Boot green */
+}
+
+.nodejs {
+  color: #68a063; /* Node.js green */
+}
+
+/* Hover Effects */
+.icon:hover {
+  transform: scale(1.2);
+  opacity: 0.8;
 }

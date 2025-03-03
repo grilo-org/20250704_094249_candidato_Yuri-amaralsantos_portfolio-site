@@ -1,11 +1,11 @@
 import React from "react";
 import ProjectCard from "./ProjectCard";
 import "./ProjectSection.css"; // Import the CSS file
-import project1 from "../../../assets/site1.png";
+import project1 from "../../../assets/projects/site1.png";
 import rectangle from "../../../assets/rectangle.png";
-import project2 from "../../../assets/site2.png";
-import project3 from "../../../assets/site3.png";
-import project4 from "../../../assets/site4.png";
+import project2 from "../../../assets/projects/site2.png";
+import project3 from "../../../assets/projects/site3.png";
+import project4 from "../../../assets/projects/site4.png";
 
 const ProjectsSection = () => {
   const projects = [
