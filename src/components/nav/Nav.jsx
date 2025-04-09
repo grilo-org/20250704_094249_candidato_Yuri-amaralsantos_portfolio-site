@@ -12,7 +12,6 @@ const Nav = () => {
   const pageLinks = [
     { path: "/About", label: "Sobre" },
     { path: "/projects", label: "Projetos" },
-    { path: "/design", label: "Design" },
   ];
 
   const renderLinks = () => (

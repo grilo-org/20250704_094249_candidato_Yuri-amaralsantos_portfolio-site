@@ -15,6 +15,10 @@ li {
   color: #000000;
 }
 
+main {
+  min-height: 500px;
+}
+
 h2 {
   font-size: 30px;
   text-align: center;
