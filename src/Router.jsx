@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "../src/components/pages/home";
+import Home from "../src/pages/home";
+/* import DesignPage from "../src/pages/designs";
+import ProjectPage from "../src/pages/projects";*/
+import AboutPage from "../src/pages/about";
 
-import Nav from "../src/components/elements/nav/Nav";
-import Footer from "../src/components/elements/footer/Footer";
+import Nav from "../src/components/nav/Nav";
+import Footer from "../src/components/footer/Footer";
 
 // Mapping pages dynamically
 
@@ -12,6 +15,9 @@ const AppRouter = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/Sobre" element={<AboutPage />} />
+        {/* <Route path="/Projetos" element={<ProjectPage />} />
+        <Route path="/About" element={<DesignPage />} /> */}
       </Routes>
       <Footer />
     </Router>

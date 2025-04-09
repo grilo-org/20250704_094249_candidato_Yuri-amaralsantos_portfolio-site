@@ -1,6 +1,5 @@
 import Header from "../sessions/header/Header";
 import ProjectsSection from "../sessions/projects/ProjectSection";
-import About from "../sessions/about/About";
 
 import Skills from "../sessions/skills/Skills";
 import DesignSection from "../sessions/designs/DesignSection";
@@ -11,7 +10,7 @@ const Home = () => {
       <Header />
       <ProjectsSection />
       <DesignSection />
-      <About />
+
       <Skills />
     </div>
   );

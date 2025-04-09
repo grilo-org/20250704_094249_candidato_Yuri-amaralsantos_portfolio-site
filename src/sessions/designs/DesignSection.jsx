@@ -1,11 +1,10 @@
 import React from "react";
-import DesignCard from "./DesignCard";
+import DesignCard from "../../components/designCard/DesignCard";
 import "./DesignSection.css"; // Import the CSS file
-import designPreview1 from "../../../assets/designs/designPreview1.png";
-import designFull1 from "../../../assets/designs/designFull1.png";
-import designPreview2 from "../../../assets/designs/designPreview2.png";
-import designFull2 from "../../../assets/designs/designFull2.png";
-import rectangle from "../../../assets/rectangle.png";
+import designPreview1 from "../../assets/designs/designPreview1.png";
+import designFull1 from "../../assets/designs/designFull1.png";
+import designPreview2 from "../../assets/designs/designPreview2.png";
+import designFull2 from "../../assets/designs/designFull2.png";
 
 const DesignSection = () => {
   const projects = [
