@@ -1,25 +1,24 @@
 import React from "react";
 import ProjectCard from "../../components/projectCard/ProjectCard";
-import "./ProjectSection.css";
 import projects from "../../data/projects.json";
+import "./projects.css";
 
-const ProjectsSection = () => {
+const Project = () => {
   return (
-    <section>
-      <h2>Projetos</h2>
-      <div id="projetos">
-        {projects.slice(0, 3).map((project, index) => (
+    <main>
+      <div id="todos-projetos">
+        {projects.map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
             description={project.description}
-            image={project.image} // Caminho direto da imagem no public
+            image={project.image}
             link={project.link}
           />
         ))}
       </div>
-    </section>
+    </main>
   );
 };
 
-export default ProjectsSection;
+export default Project;

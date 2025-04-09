@@ -1,30 +1,40 @@
+// Learn about this import: https://reactjs.org/docs/hooks-state.html
 import React, { useState } from "react";
-import "./Nav.css";
 import { Link, useLocation } from "react-router-dom";
+import "./Nav.css";
 
 const Nav = () => {
   const [menuVisible, setMenuVisible] = useState(false);
   const location = useLocation();
 
-  const toggleMenu = () => setMenuVisible(!menuVisible);
+  const toggleMenu = () => setMenuVisible((prev) => !prev);
 
-  // Function to handle smooth scrolling
-  const scrollToSection = (e, sectionId) => {
-    e.preventDefault();
-    const section = document.getElementById(sectionId);
-    if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
-    }
-  };
+  const pageLinks = [
+    { path: "/sobre", label: "Sobre" },
+    { path: "/projects", label: "Projetos" },
+    { path: "/design", label: "Design" },
+  ];
+
+  const renderLinks = () => (
+    <>
+      {pageLinks.map(({ path, label }) => (
+        <Link key={path} to={path}>
+          {label}
+        </Link>
+      ))}
+      {/* Contato scrolls to current page footer */}
+      <a href={`${location.pathname}#footer`}>Contato</a>
+    </>
+  );
 
   return (
     <>
-      {/* Mobile menu button */}
+      {/* Toggle Button (Mobile) */}
       <a
         id="toggleButton"
         href="#"
         onClick={(e) => {
-          e.preventDefault(); // Prevent default anchor behavior
+          e.preventDefault();
           toggleMenu();
         }}
         className="nav-link-button"
@@ -32,84 +42,23 @@ const Nav = () => {
         ☰
       </a>
 
-      {/* Mobile menu */}
+      {/* Mobile Navigation */}
       {menuVisible && (
         <div id="menuMobile">
           <Link to="/">Home</Link>
-          {location.pathname === "/" ? (
-            <>
-              <a href="#sobre" onClick={(e) => scrollToSection(e, "sobre")}>
-                Sobre
-              </a>
-              <a
-                href="#projetos"
-                onClick={(e) => scrollToSection(e, "projetos")}
-              >
-                Projetos
-              </a>
-              <a href="#design" onClick={(e) => scrollToSection(e, "design")}>
-                Design
-              </a>
-              <a
-                href="#habilidades"
-                onClick={(e) => scrollToSection(e, "habilidades")}
-              >
-                Habilidades
-              </a>
-              <a href="#contato" onClick={(e) => scrollToSection(e, "contato")}>
-                Contato
-              </a>
-            </>
-          ) : (
-            <>
-              <Link to="/#sobre">Sobre</Link>
-              <Link to="/#projetos">Projetos</Link>
-              <Link to="/#design">Design</Link>
-              <Link to="/#habilidades">Habilidades</Link>
-            </>
-          )}
+          {renderLinks()}
           <a href="curriculoti.pdf" download>
             <span>Currículo</span>
           </a>
         </div>
       )}
 
-      {/* Desktop nav */}
+      {/* Desktop Navigation */}
       <nav>
         <div>
           <Link to="/">Home</Link>
-          {location.pathname === "/" ? (
-            <>
-              <a href="#sobre" onClick={(e) => scrollToSection(e, "sobre")}>
-                Sobre
-              </a>
-              <a
-                href="#projetos"
-                onClick={(e) => scrollToSection(e, "projetos")}
-              >
-                Projetos
-              </a>
-              <a href="#design" onClick={(e) => scrollToSection(e, "design")}>
-                Design
-              </a>
-              <a
-                href="#habilidades"
-                onClick={(e) => scrollToSection(e, "habilidades")}
-              >
-                Habilidades
-              </a>
-            </>
-          ) : (
-            <>
-              <Link to="/#sobre">Sobre</Link>
-              <Link to="/#projetos">Projetos</Link>
-              <Link to="/#design">Design</Link>
-              <Link to="/#habilidades">Habilidades</Link>
-              <Link to="/#contato">Contato</Link>
-            </>
-          )}
+          {renderLinks()}
         </div>
-
         <a href="curriculoti.pdf" download className="nav-link-button">
           <span>Currículo</span>
         </a>

@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "../src/pages/home";
-/* import DesignPage from "../src/pages/designs";
-import ProjectPage from "../src/pages/projects";*/
+//import DesignPage from "../src/pages/designs";
+import ProjectPage from "../src/pages/projects/projects";
 import AboutPage from "../src/pages/about";
 
 import Nav from "../src/components/nav/Nav";
@@ -15,9 +15,9 @@ const AppRouter = () => {
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/Sobre" element={<AboutPage />} />
-        {/* <Route path="/Projetos" element={<ProjectPage />} />
-        <Route path="/About" element={<DesignPage />} /> */}
+        <Route path="/About" element={<AboutPage />} />
+        <Route path="/projects" element={<ProjectPage />} />
+        {/* <Route path="/About" element={<DesignPage />} /> */}
       </Routes>
       <Footer />
     </Router>

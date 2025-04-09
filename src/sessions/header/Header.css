@@ -1,19 +1,37 @@
-/* Default styles (for larger screens) */
 header {
+  position: relative; /* Needed for absolutely positioning ::after */
   border: #000000 1px solid;
-  background-image: url("../../../assets/lake.jpg");
-
   width: 100%;
   height: auto;
-
-  background-repeat: no-repeat;
-  background-position: center;
+  background-color: #000; /* Fallback or background color */
+  overflow: hidden; /* Hide overflow if needed */
 }
 
+/* Create the right-side background image */
+header::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%; /* Adjust width as needed */
+  height: 100%;
+  background-image: url("../../../public/pankaj-patel-u2Ru4QBXA5Q-unsplash.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center right;
+  opacity: 0.5; /* 50% transparency */
+  pointer-events: none; /* So it doesn't interfere with clicks */
+  z-index: 1;
+}
+
+/* Keep your title and content on top of the background image */
 .titulo {
+  position: relative;
+  z-index: 2; /* Make sure content stays above the background */
   margin-left: 2rem;
   margin-top: 2rem;
   margin-bottom: 2rem;
+  color: white;
 }
 
 .titulo h1,
