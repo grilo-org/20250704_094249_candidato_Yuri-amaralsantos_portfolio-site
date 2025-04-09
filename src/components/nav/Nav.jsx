@@ -10,7 +10,7 @@ const Nav = () => {
   const toggleMenu = () => setMenuVisible((prev) => !prev);
 
   const pageLinks = [
-    { path: "/sobre", label: "Sobre" },
+    { path: "/About", label: "Sobre" },
     { path: "/projects", label: "Projetos" },
     { path: "/design", label: "Design" },
   ];

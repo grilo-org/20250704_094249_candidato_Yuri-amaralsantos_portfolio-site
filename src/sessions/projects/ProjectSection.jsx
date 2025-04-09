@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Importa o Link
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import "./ProjectSection.css";
 import projects from "../../data/projects.json";
@@ -13,10 +14,17 @@ const ProjectsSection = () => {
             key={index}
             title={project.title}
             description={project.description}
-            image={project.image} // Caminho direto da imagem no public
+            image={project.image}
             link={project.link}
           />
         ))}
+      </div>
+
+      {/* Botão Ver Mais */}
+      <div className="ver-mais-wrapper">
+        <Link to="/projects" className="ver-mais-btn">
+          Ver mais projetos
+        </Link>
       </div>
     </section>
   );

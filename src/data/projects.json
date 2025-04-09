@@ -1,11 +1,5 @@
 [
   {
-    "title": "Portifolio",
-    "description": "Portfolio pessoal construido utilizando react.",
-    "image": "/projects/site1.png",
-    "link": "https://github.com/Yuri-amaralsantos/portfolio-site"
-  },
-  {
     "title": "Learn Notes",
     "description": "Um aplicativo web desenvolvido em React que permite criar e organizar suas anotações de forma prática.",
     "image": "/projects/site2.png",

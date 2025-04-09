@@ -1,24 +1,24 @@
 import React from "react";
-import "./ProjectCard.css"; // Import the CSS file
+import "./ProjectCard.css";
 
-const ProjectCard = ({ title, description, image, link, openModal }) => {
+const ProjectCard = ({ title, description, image, link }) => {
   return (
-    <div className="project-card">
-      <div id="tituloCard">
-        <h3>{title}</h3>
+    <a
+      href={link}
+      className="project-card-link-wrapper"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <div className="project-card">
+        {image && <img src={image} alt="image" />}
+        <div id="tituloCard">
+          <h3>{title}</h3>
+        </div>
+        <div id="desc">
+          <p>{description}</p>
+        </div>
       </div>
-
-      {/* Display image if provided */}
-      {image && <img src={image} alt={"image"} />}
-      <div id="desc">
-        <p>{description}</p>
-      </div>
-
-      {/* Link styled as a button */}
-      <a href={link} className="project-card-link">
-        Acessar
-      </a>
-    </div>
+    </a>
   );
 };
 
