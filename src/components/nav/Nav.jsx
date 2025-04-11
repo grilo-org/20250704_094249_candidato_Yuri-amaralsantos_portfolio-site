@@ -12,6 +12,7 @@ const Nav = () => {
   const pageLinks = [
     { path: "/About", label: "Sobre" },
     { path: "/projects", label: "Projetos" },
+    { path: "/designs", label: "Designs" },
   ];
 
   const renderLinks = () => (

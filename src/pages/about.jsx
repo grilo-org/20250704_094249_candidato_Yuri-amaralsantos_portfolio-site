@@ -1,6 +1,6 @@
 import React from "react";
 
-import AboutSection from "../sessions/about/About";
+import AboutSection from "../sections/about/About";
 
 const AboutPage = () => {
   return (

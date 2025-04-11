@@ -1,0 +1,40 @@
+#projetos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns for PC */
+  gap: 2.3rem;
+}
+
+/* Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  #projetos {
+    grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media (max-width: 768px) {
+  #projetos {
+    grid-template-columns: repeat(1, 1fr); /* 1 column for mobile */
+  }
+}
+
+.ver-mais-wrapper {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.ver-mais-btn {
+  background-color: white;
+  color: #1e1e1e;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  border: 1px solid #1e1e1e;
+  transition: 0.3s ease;
+}
+
+.ver-mais-btn:hover {
+  background-color: #1e1e1e;
+  color: white;
+}

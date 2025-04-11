@@ -1,14 +1,15 @@
-import Header from "../sessions/header/Header";
-import ProjectsSection from "../sessions/projects/ProjectSection";
+import Header from "../sections/header/Header";
+import ProjectsSection from "../sections/projects/ProjectSection";
+import DesignSection from "../sections/designs/DesignSection";
 
-import Skills from "../sessions/skills/Skills";
+import Skills from "../sections/skills/Skills";
 
 const Home = () => {
   return (
     <div className="App">
       <Header />
       <ProjectsSection />
-
+      <DesignSection />
       <Skills />
     </div>
   );
