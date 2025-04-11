@@ -44,6 +44,12 @@ nav div {
 
 #menuMobile {
   display: none; /* Hide the menu by default */
+  position: fixed; /* Add positioning */
+  top: 20;
+  left: 0;
+  width: 100%;
+  background-color: #1e1e1e;
+  z-index: 10; /* Ensure it's on top of other elements */
 }
 
 #toggleButton {
@@ -53,32 +59,31 @@ nav div {
 /* Styles for mobile screens (max-width: 768px) */
 @media (max-width: 768px) {
   nav {
-    display: none; /* Hide the desktop nav on mobile */
-  }
-  .nav-link-button {
-    width: 30px;
-    margin: 0;
-    border-radius: 0;
+    display: none;
   }
 
   #toggleButton {
     font-size: 24px;
+    width: 30px;
     display: block; /* Show the button on mobile screens */
-    background-color: #1e1e1e;
+    background-color: black;
     color: white;
     border: none;
+    border-radius: 0;
+    margin: 0px;
     padding: 10px 20px;
     cursor: pointer;
   }
 
-  #menuMobile {
-    display: flex; /* Show the menu when visible */
-    flex-direction: column;
+  #buttonBackground {
     background-color: #1e1e1e;
+  }
+
+  #menuMobile {
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
     padding: 10px;
-    position: absolute;
-    left: 0;
-    width: 100%;
   }
 
   #menuMobile a {
@@ -88,6 +93,6 @@ nav div {
   }
 
   #menuMobile a:hover {
-    background-color: #ddd;
+    background-color: #6e6d6d;
   }
 }

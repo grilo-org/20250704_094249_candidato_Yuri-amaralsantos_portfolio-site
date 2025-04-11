@@ -30,17 +30,19 @@ const Nav = () => {
   return (
     <>
       {/* Toggle Button (Mobile) */}
-      <a
-        id="toggleButton"
-        href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          toggleMenu();
-        }}
-        className="nav-link-button"
-      >
-        ☰
-      </a>
+      <div id="buttonBackground">
+        <a
+          id="toggleButton"
+          href="#"
+          onClick={(e) => {
+            e.preventDefault();
+            toggleMenu();
+          }}
+          className="nav-link-button"
+        >
+          ☰
+        </a>
+      </div>
 
       {/* Mobile Navigation */}
       {menuVisible && (
