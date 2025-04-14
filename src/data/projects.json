@@ -16,5 +16,17 @@
     "description": "Um blog com Flask (backend), Vue.js (frontend) e PostgreSQL.",
     "image": "/projects/site4.png",
     "link": "https://github.com/Yuri-amaralsantos/flaskBlog"
+  },
+  {
+    "title": "Site de avaliação de livros",
+    "description": "Um site de avaliação de livros com Asp.net/C# (backend), React (frontend) e PostgreSQL.",
+    "image": "/projects/site5.png",
+    "link": "https://github.com/Yuri-amaralsantos/bookRatingNetCore"
+  },
+  {
+    "title": "Site sobre um jogo",
+    "description": "Um Site utilizando angular para frontend e json para armazenar dados.",
+    "image": "/projects/site6.png",
+    "link": "https://github.com/Yuri-amaralsantos/game-presentation"
   }
 ]
