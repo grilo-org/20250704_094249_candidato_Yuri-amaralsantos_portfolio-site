@@ -1,10 +1,13 @@
 .project-card-link-wrapper {
   text-decoration: none;
   color: inherit;
+  display: flex;
+  justify-content: center;
 }
 
 .project-card {
-  padding: 1rem 1rem;
+  padding: 1rem;
+  width: 300px;
   color: white;
   border: none;
   font-family: "Times New Roman", serif;
@@ -14,6 +17,7 @@
   text-align: center;
   cursor: pointer;
   transition: transform 0.3s ease;
+  box-shadow: 0 4px 8px rgba(109, 109, 109, 0.705);
 }
 
 .project-card:hover {

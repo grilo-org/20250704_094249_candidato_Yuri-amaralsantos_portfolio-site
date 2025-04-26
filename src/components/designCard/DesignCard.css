@@ -4,6 +4,12 @@
   width: 300px;
   text-align: center;
   transition: 0.3s;
+  box-shadow: 0 4px 8px rgba(109, 109, 109, 0.705);
+}
+
+.design-container {
+  display: flex;
+  justify-content: center;
 }
 
 .design-card:hover {

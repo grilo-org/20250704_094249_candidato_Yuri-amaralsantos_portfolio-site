@@ -22,19 +22,3 @@
   text-align: center;
   margin-top: 2rem;
 }
-
-.ver-mais-btn {
-  background-color: white;
-  color: #1e1e1e;
-  padding: 0.75rem 1.5rem;
-  border-radius: 10px;
-  text-decoration: none;
-  font-weight: bold;
-  border: 1px solid #1e1e1e;
-  transition: 0.3s ease;
-}
-
-.ver-mais-btn:hover {
-  background-color: #1e1e1e;
-  color: white;
-}
