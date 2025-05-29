@@ -1,5 +1,11 @@
 [
   {
+    "title": "Portal Abrams",
+    "description": "Um portal educacional da ong Instituto Abrams com cursos, questões e jogos. Foi desenvolvovido utilizando react e supabase.",
+    "image": "/projects/site7.png",
+    "link": "https://portalabrams.vercel.app/home"
+  },
+  {
     "title": "Learn Notes",
     "description": "Um aplicativo web desenvolvido em React que permite criar e organizar suas anotações de forma prática.",
     "image": "/projects/site2.png",
