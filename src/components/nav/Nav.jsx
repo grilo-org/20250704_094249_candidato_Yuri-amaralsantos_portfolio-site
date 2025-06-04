@@ -1,5 +1,5 @@
 // Learn about this import: https://reactjs.org/docs/hooks-state.html
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Nav.css";
 
@@ -12,7 +12,6 @@ const Nav = () => {
   const pageLinks = [
     { path: "/About", label: "Sobre" },
     { path: "/projects", label: "Projetos" },
-    { path: "/designs", label: "Designs" },
   ];
 
   const renderLinks = () => (

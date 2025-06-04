@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom"; // Importa o Link
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import "./ProjectSection.css";
@@ -9,13 +8,14 @@ const ProjectsSection = () => {
     <section>
       <h2>Projetos</h2>
       <div id="projetos">
-        {projects.slice(0, 3).map((project, index) => (
+        {projects.slice(0, 6).map((project, index) => (
           <ProjectCard
             key={index}
             title={project.title}
             description={project.description}
             image={project.image}
-            link={project.link}
+            github={project.github}
+            demo={project.demo}
           />
         ))}
       </div>

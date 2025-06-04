@@ -1,4 +1,3 @@
-import React from "react";
 import ProjectCard from "../../components/projectCard/ProjectCard";
 import projects from "../../data/projects.json";
 import "./projects.css";
@@ -13,7 +12,8 @@ const Project = () => {
             title={project.title}
             description={project.description}
             image={project.image}
-            link={project.link}
+            github={project.github}
+            demo={project.demo}
           />
         ))}
       </div>
