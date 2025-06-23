@@ -17,8 +17,21 @@
   text-align: justify;
   max-width: 700px;
   width: 100%;
-  margin-bottom: 1rem;
-  line-height: 1.6;
+  line-height: 1.4; /* menor espaço entre linhas */
+  white-space: normal; /* não precisa de pre-line porque usamos <br><br> */
+}
+
+.espacoParagrafo {
+  display: block;
+  height: 0.5rem; /* controla o espaço visual */
+  pointer-events: none;
+  user-select: none;
+}
+
+.espacoParagrafo::before {
+  content: "";
+  display: block;
+  height: 100%;
 }
 
 .experiencia {
